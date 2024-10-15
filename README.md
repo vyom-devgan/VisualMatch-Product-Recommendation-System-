@@ -6,7 +6,6 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Dataset Preparation](#dataset-preparation)
 - [Model Architecture](#model-architecture)
 - [Usage](#usage)
@@ -40,17 +39,4 @@ The core of the system is a **ResNet18** deep learning model that has been pre-t
 - **scikit-learn** for cosine similarity computation
 - **Matplotlib** for visualization
 
-## Installation
-
-To get started with VisualMatch, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/visualmatch.git
-   cd visualmatch
-2. Set up a virtual environment (optional but recommended):
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # For Linux/macOS
-   # or
-   venv\\Scripts\\activate  # For Windows
+The dataset used for this project was obtained from Kaggle. You can find it [here](insert_link_to_kaggle_dataset).
