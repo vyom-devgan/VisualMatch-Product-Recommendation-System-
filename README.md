@@ -6,7 +6,7 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Dataset Preparation](#dataset-preparation)
+- [Dataset](#dataset)
 - [Model Architecture](#model-architecture)
 - [Usage](#usage)
   - [Step 1: Dataset Preparation](#step-1-dataset-preparation)
@@ -36,6 +36,7 @@ The core of the system is a **ResNet18** deep learning model that has been pre-t
 - **scikit-learn** for cosine similarity computation
 - **Matplotlib** for visualization
 
+## Dataset
 The dataset used for this project was obtained from Kaggle. You can find it [here](insert_link_to_kaggle_dataset).
 
 ## Model Architecture
@@ -43,7 +44,6 @@ The dataset used for this project was obtained from Kaggle. You can find it [her
 The core model is a pre-trained **ResNet18** from the `torchvision` library. The final classification layer is removed, and the rest of the network is used as a feature extractor. Feature vectors are then compared using **cosine similarity** to recommend visually similar products.
 
 ## Usage
-
 Follow these steps to utilize the VisualMatch product recommendation system:
 
 ### Step 1: Dataset Preparation
