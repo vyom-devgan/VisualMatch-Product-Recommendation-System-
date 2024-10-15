@@ -14,9 +14,6 @@
   - [Step 3: Similarity Measurement](#step-3-similarity-measurement)
   - [Step 4: Visualization](#step-4-visualization)
 - [Results](#results)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 VisualMatch allows users to find visually similar products from a collection of images. This can be useful in various industries, such as e-commerce, where recommending products that visually resemble the one a customer is viewing can enhance the shopping experience.
@@ -40,3 +37,34 @@ The core of the system is a **ResNet18** deep learning model that has been pre-t
 - **Matplotlib** for visualization
 
 The dataset used for this project was obtained from Kaggle. You can find it [here](insert_link_to_kaggle_dataset).
+
+## Model Architecture
+
+The core model is a pre-trained **ResNet18** from the `torchvision` library. The final classification layer is removed, and the rest of the network is used as a feature extractor. Feature vectors are then compared using **cosine similarity** to recommend visually similar products.
+
+## Usage
+
+Follow these steps to utilize the VisualMatch product recommendation system:
+
+### Step 1: Dataset Preparation
+Load and preprocess the images from the dataset. Ensure that images are resized and normalized appropriately for the model.
+
+### Step 2: Feature Extraction
+Utilize the pre-trained ResNet18 model to extract feature vectors from the images. This step transforms each image into a numerical representation.
+
+### Step 3: Similarity Measurement
+Compute cosine similarity between the feature vectors to find images visually similar to a query image. The top K similar images are recommended.
+
+### Step 4: Visualization
+Visualize the query image alongside its recommended similar images for easy comparison.
+
+## Results
+
+The VisualMatch system effectively retrieves visually similar products based on the input image. By leveraging the ResNet18 model and cosine similarity, the system demonstrates high accuracy in recommending relevant products.
+
+### Sample Results:
+- **Query Image:** Product X
+- **Recommended Products:**
+    - Product A (Similarity: 0.92)
+    - Product B (Similarity: 0.89)
+    - Product C (Similarity: 0.87)
