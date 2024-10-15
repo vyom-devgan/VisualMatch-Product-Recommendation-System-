@@ -23,3 +23,34 @@
 VisualMatch allows users to find visually similar products from a collection of images. This can be useful in various industries, such as e-commerce, where recommending products that visually resemble the one a customer is viewing can enhance the shopping experience.
 
 The core of the system is a **ResNet18** deep learning model that has been pre-trained on ImageNet for feature extraction. By comparing feature vectors using **cosine similarity**, the system recommends the top visually similar products to the user.
+
+## Features
+- **Deep Learning-based Feature Extraction:** Uses a pre-trained ResNet18 model to extract robust image features.
+- **Cosine Similarity Calculation:** Efficient similarity metric calculation for finding visually similar products.
+- **Top K Recommendations:** Returns the top K most similar products for any given query.
+- **Visualization of Results:** Displays query images alongside their recommended matches.
+- **Modular Design:** Clean, modular code that is easy to extend or modify.
+
+## Technologies Used
+- **Python 3.x**
+- **PyTorch** for deep learning model loading and inference
+- **Torchvision** for image transformations and pre-trained models
+- **PIL (Python Imaging Library)** for image loading and manipulation
+- **NumPy** for numerical operations
+- **scikit-learn** for cosine similarity computation
+- **Matplotlib** for visualization
+
+## Installation
+
+To get started with VisualMatch, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/visualmatch.git
+   cd visualmatch
+2. Set up a virtual environment (optional but recommended):
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # For Linux/macOS
+   # or
+   venv\\Scripts\\activate  # For Windows
