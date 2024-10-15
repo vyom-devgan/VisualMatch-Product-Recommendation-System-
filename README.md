@@ -37,7 +37,7 @@ The core of the system is a **ResNet18** deep learning model that has been pre-t
 - **Matplotlib** for visualization
 
 ## Dataset
-The dataset used for this project was obtained from Kaggle. You can find it [here](insert_link_to_kaggle_dataset).
+The dataset used for this project was obtained from Kaggle. You can find it [here](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset/data).
 
 ## Model Architecture
 
